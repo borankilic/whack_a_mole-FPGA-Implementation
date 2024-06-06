@@ -3,6 +3,7 @@ VHDL codes for the design of a simple Whack-a-Mole game implemented on the FPGA.
 This was the final project of the EE244 (Digital Systems Design Course) course of the Electrical & Electronical Engineering curricilum of Bogazici University.
 Please check the project report for deeper insight and more explanation about how all the modules operate. 
 
+![Game is displayed onto a monitor using VGA driver](/IMG_7263.JPG)
 
 ## INTRODUCTION
 The primary objective of this project is to design and implement a simplified version of the "Whack-a- Mole" game on a Field Programmable Gate Array (FPGA) platform, utilizing the Nexys3 board. This endeavor integrates multiple fundamental concepts of digital design, including VGA signal generation, pseudo-random number generation, and real-time interactive gameplay, making it an exemplary educational exercise in the realm of digital systems and hardware description languages (HDLs).
