@@ -258,7 +258,7 @@ random_time <= 60/diff when "0000",
 
 
 
-draw_mole : process (clk_vga)
+draw_mole_and_cursor : process (clk_vga)
 begin
 
 if rising_edge(clk_vga) then
@@ -381,77 +381,6 @@ end if;
 
 
 end process;
-
---draw_cursor : process (clk_vga)
---begin
---
---if rising_edge(clk_vga) then
------ sliding cursor animation maybe
---
---if cursor_i = 0 and cursor_j=0 then
---if ((hp >= 203 and hp <= 213) and (vp >= 69 and vp <= 149)) or ((hp >= 168 and hp <= 248) and (vp >= 104 and vp <= 114)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---elsif cursor_i = 0 and cursor_j=1 then
---if ((hp >=363  and hp <= 373) and (vp >= 69 and vp <= 149)) or ((hp >= 328 and hp <= 408) and (vp >= 104 and vp <= 114)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---elsif cursor_i = 0 and cursor_j=2 then
---if ((hp >= 523 and hp <= 533) and (vp >= 69 and vp <= 149)) or ((hp >= 488 and hp <= 568) and (vp >= 104 and vp <= 114)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---elsif cursor_i = 1 and cursor_j=0 then
---if ((hp >= 203 and hp <= 213) and (vp >= 229 and vp <= 309)) or ((hp >= 168 and hp <= 248) and (vp >= 264 and vp <= 274)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---elsif cursor_i = 1 and cursor_j=1 then
---if ((hp >=363  and hp <= 373) and (vp >= 229 and vp <= 309)) or ((hp >= 328 and hp <= 408) and (vp >= 264 and vp <= 274)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---elsif cursor_i = 1 and cursor_j=2 then
---if ((hp >= 523 and hp <= 533) and (vp >= 229 and vp <= 309)) or ((hp >= 488 and hp <= 568) and (vp >= 264 and vp <= 274)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---elsif cursor_i = 2 and cursor_j=0 then
---if ((hp >= 203 and hp <= 213) and (vp >= 389 and vp <= 469)) or ((hp >= 168 and hp <= 248) and (vp >= 424 and vp <= 434)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---elsif cursor_i = 2 and cursor_j=1 then
---if ((hp >=363  and hp <= 373) and (vp >= 389 and vp <= 469)) or ((hp >= 328 and hp <= 408) and (vp >= 424 and vp <= 434)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---elsif cursor_i = 2 and cursor_j=2 then
---if ((hp >= 523 and hp <= 533) and (vp >= 389 and vp <= 469)) or ((hp >= 488 and hp <= 568) and (vp >= 424 and vp <= 434)) then
---set_blue <= "11";
---else
---set_blue <="00";
---end if;
---
---
---
---
---else
---set_blue <= "00";
---
---end if;
---end if;
---end process;
 
 
 
